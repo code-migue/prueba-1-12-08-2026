@@ -1,11 +1,416 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mazo morelli</title>
+    <title>Nexus Games</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>MATEO MAZO 2008</h1>
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                🎮 NEXUS<span>GAMES</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#juegos">Juegos</a></li>
+                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="themeBtn">☀️</button>
+
+                <button class="cart-btn" id="cartBtn">
+                    🛒 <span id="cartCount">0</span>
+                </button>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-content">
+
+                <span class="tag">🔥 NUEVA TEMPORADA</span>
+
+                <h1>
+                    EL JUEGO
+                    <span>COMIENZA AQUÍ.</span>
+                </h1>
+
+                <p>
+                    Descubre los mejores videojuegos, encuentra ofertas
+                    increíbles y lleva tu experiencia gaming al siguiente nivel.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#juegos" class="btn primary">
+                        Explorar juegos
+                    </a>
+
+                    <a href="#ofertas" class="btn secondary">
+                        Ver ofertas
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+                <div class="controller">
+                    🎮
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ESTADÍSTICAS -->
+
+        <section class="stats">
+
+            <div class="stat">
+                <strong>+500</strong>
+                <span>Videojuegos</span>
+            </div>
+
+            <div class="stat">
+                <strong>+20K</strong>
+                <span>Gamers</span>
+            </div>
+
+            <div class="stat">
+                <strong>24/7</strong>
+                <span>Soporte</span>
+            </div>
+
+            <div class="stat">
+                <strong>100%</strong>
+                <span>Digital</span>
+            </div>
+
+        </section>
+
+
+        <!-- JUEGOS -->
+
+        <section class="games-section" id="juegos">
+
+            <div class="section-header">
+
+                <div>
+                    <span class="small-title">CATÁLOGO</span>
+                    <h2>Juegos destacados</h2>
+                </div>
+
+                <div class="filters">
+
+                    <button class="filter active" data-category="todos">
+                        Todos
+                    </button>
+
+                    <button class="filter" data-category="accion">
+                        Acción
+                    </button>
+
+                    <button class="filter" data-category="aventura">
+                        Aventura
+                    </button>
+
+                    <button class="filter" data-category="deportes">
+                        Deportes
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="search-box">
+                🔎
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Buscar videojuegos..."
+                >
+            </div>
+
+
+            <div class="games-grid" id="gamesGrid">
+
+                <article
+                    class="game-card"
+                    data-category="accion"
+                    data-name="Cyber Strike"
+                >
+
+                    <div class="game-image cyber">
+                        <span>⚡</span>
+                    </div>
+
+                    <div class="game-info">
+
+                        <span class="category">ACCIÓN</span>
+
+                        <h3>Cyber Strike</h3>
+
+                        <p>Una batalla futurista por la supervivencia.</p>
+
+                        <div class="game-bottom">
+
+                            <strong>$89.900</strong>
+
+                            <button
+                                class="add-cart"
+                                data-game="Cyber Strike"
+                            >
+                                +
+                            </button>
+
+                        </div>
+
+                        <button class="favorite">♡</button>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                    class="game-card"
+                    data-category="aventura"
+                    data-name="Lost Kingdom"
+                >
+
+                    <div class="game-image kingdom">
+                        <span>🏰</span>
+                    </div>
+
+                    <div class="game-info">
+
+                        <span class="category">AVENTURA</span>
+
+                        <h3>Lost Kingdom</h3>
+
+                        <p>Explora un reino lleno de misterios.</p>
+
+                        <div class="game-bottom">
+
+                            <strong>$74.900</strong>
+
+                            <button
+                                class="add-cart"
+                                data-game="Lost Kingdom"
+                            >
+                                +
+                            </button>
+
+                        </div>
+
+                        <button class="favorite">♡</button>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                    class="game-card"
+                    data-category="deportes"
+                    data-name="Ultimate FC"
+                >
+
+                    <div class="game-image football">
+                        <span>⚽</span>
+                    </div>
+
+                    <div class="game-info">
+
+                        <span class="category">DEPORTES</span>
+
+                        <h3>Ultimate FC</h3>
+
+                        <p>Construye tu equipo y domina la cancha.</p>
+
+                        <div class="game-bottom">
+
+                            <strong>$99.900</strong>
+
+                            <button
+                                class="add-cart"
+                                data-game="Ultimate FC"
+                            >
+                                +
+                            </button>
+
+                        </div>
+
+                        <button class="favorite">♡</button>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                    class="game-card"
+                    data-category="accion"
+                    data-name="Shadow Protocol"
+                >
+
+                    <div class="game-image shadow">
+                        <span>🥷</span>
+                    </div>
+
+                    <div class="game-info">
+
+                        <span class="category">ACCIÓN</span>
+
+                        <h3>Shadow Protocol</h3>
+
+                        <p>Infiltración, estrategia y combate extremo.</p>
+
+                        <div class="game-bottom">
+
+                            <strong>$84.900</strong>
+
+                            <button
+                                class="add-cart"
+                                data-game="Shadow Protocol"
+                            >
+                                +
+                            </button>
+
+                        </div>
+
+                        <button class="favorite">♡</button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <p id="noResults" class="no-results">
+                No encontramos videojuegos con ese nombre.
+            </p>
+
+        </section>
+
+
+        <!-- OFERTA -->
+
+        <section class="offer" id="ofertas">
+
+            <div>
+
+                <span class="small-title">OFERTA ESPECIAL</span>
+
+                <h2>
+                    50% DE DESCUENTO
+                </h2>
+
+                <p>
+                    Aprovecha nuestra promoción de temporada.
+                    Solo durante los próximos días.
+                </p>
+
+                <div id="countdown" class="countdown">
+                    00 : 00 : 00 : 00
+                </div>
+
+                <button class="btn primary" id="offerBtn">
+                    Aprovechar oferta
+                </button>
+
+            </div>
+
+            <div class="offer-icon">
+                🎁
+            </div>
+
+        </section>
+
+
+        <!-- CONTACTO -->
+
+        <section class="contact" id="contacto">
+
+            <span class="small-title">CONTACTO</span>
+
+            <h2>¿Tienes alguna pregunta?</h2>
+
+            <p>
+                Escríbenos y nuestro equipo te responderá lo más rápido posible.
+            </p>
+
+            <form id="contactForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Tu nombre"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Tu correo"
+                    required
+                >
+
+                <textarea
+                    id="message"
+                    placeholder="Escribe tu mensaje..."
+                    required
+                ></textarea>
+
+                <button class="btn primary" type="submit">
+                    Enviar mensaje
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="logo">
+            🎮 NEXUS<span>GAMES</span>
+        </div>
+
+        <p>
+            © 2026 Nexus Games. Todos los derechos reservados.
+        </p>
+
+        <div class="social">
+            Instagram · YouTube · TikTok
+        </div>
+
+    </footer>
+
+
+    <div id="notification" class="notification">
+        Producto agregado al carrito 🛒
+    </div>
+
+
+    <script src="script.js"></script>
+
 </body>
-</html>
+</html>s
